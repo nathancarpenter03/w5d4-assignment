@@ -1,0 +1,92 @@
+* { box-sizing: border-box; }
+img { width: 100%; }
+
+body {
+  background-color: #5B8266;
+}
+
+.navbar {
+  border: none;
+  margin-bottom: 30px;
+}
+
+.panel {
+  opacity: 1;
+  height: auto;
+  margin-top: 30px;
+  transition: all 0.5s ease;
+}
+
+#not-member {
+  margin-bottom: 20px;
+  color: #5B8266;
+  text-align: center;
+}
+
+.panel-default>.panel-heading {
+  background: #333;
+  color: white;
+}
+
+.panel-footer {
+  background: none;
+  border-top: none;
+}
+
+.list-group-item {
+  cursor: pointer;
+}
+
+.fade-out {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+#logout {
+  float: right;
+  font-size: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#logout:hover {
+  transform: scale(2) rotate(360deg);
+}
+
+.list-group-item {
+  transition: all .5s ease;
+}
+
+#toad {
+  font-family: 'Sansita', sans-serif;
+  font-size: 60px;
+  color: white;
+}
+
+#toadlogo {
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
+  padding-bottom: 5px;
+}
+
+#user-post-toggle {
+  font-weight: bold;
+}
+
+.form-group {
+  margin-left: 100px;
+}
+
+#timeline-name {
+  margin-right: 20px;
+  font-weight: bold; 
+}
+
+#timeline-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #5B8266;
+}

@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+    <title>toad</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,fetch,Array.prototype.includes"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css" />
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <img id="toadlogo" src="img/toadlogo.png"/>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" class="right-links">Posts</a></li>
+        <li><a href="#" class="logout right-links">Logout</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+
+                <div class="text-center">
+                    <span id="toad"><img id="toadlogo" src="img/toadlogo.png"/>toadly</span>
+                </div>
+                
+                <div class="panel panel-default">
+
+                    <div class="panel-body">
+
+                      <div class="row">
+                          <div class="col-md-4 col-md-offset-3">
+                              <a href="users.html" id="user-post-toggle">All Users</a>
+                          </div>
+                          <div class="col-md-3">
+                              <a href="posts.html" id="user-post-toggle">Posts</a>
+                          </div>
+                      </div>
+                    </div>
+
+                    <!--CREATE NEW POST-->
+                    <div class="panel-heading">
+                        <h4>New Post</h4>
+                    </div>
+                    <div class="panel-body">
+
+                         <div class="form-group">
+                            <div class="input-group">
+                                <input id="new-post" type="text" class="form-control" maxlength="160" placeholder="What's up with you today?">
+                                <span class="input-group-btn">
+                                    <button id="send-new-post" class="btn btn-info" type="button">Send</button>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="form-group hidden" id="messageSent">
+                            <div class="alert alert-success text-center">
+                                
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="panel-heading">
+                        <h4>Posts by your friends</h4>
+                    </div>
+
+                    <div class="panel-body">
+
+                        <!--Posts by people you follow generated here-->
+                         <ul class="list-group" id="posts">
+                            <!--Posts here-->
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/global.js"></script>
+    <script src="js/posts.js"></script>
+</body>
+</html>
+

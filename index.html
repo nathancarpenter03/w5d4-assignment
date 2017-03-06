@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+    <title>toadly</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,fetch,Array.prototype.includes"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css" />
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <img id="toadlogo" src="img/toadlogo.png"/>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" class="right-links">Posts</a></li>
+        <li><a href="#" class="logout right-links">Logout</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+
+                <div class="text-center">
+                    <span id="toad"><img id="toadlogo" src="img/toadlogo.png"/>toadly</span>
+                </div>
+                
+                <div class="panel panel-default">
+
+                    <div class="panel-heading">
+                        <h4>Sign in</h4>
+                    </div>
+
+                    <div class="panel-body">
+
+                        <div id="loggedout"></div>
+                        <!--Sign in input fields-->
+                        <div class="form-group">
+                            <label for="username_login">Username</label>
+                            <input type="text" id="username_login" class="form-control" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="password_login">Password</label>
+                            <input type="password" id="password_login" class="form-control" maxlength="72" required />
+                        </div>
+                        <div class="panel-footer text-center">
+                        <button id="signinButton" type="button" class="btn btn-info">Sign in</button>
+                        </div>
+                    </div>
+                    <div id="not-member">Not a member? Sign up below to join the fun!</div>
+                    <div class="panel-heading">
+                        <h4>Sign up</h4>
+                    </div>
+                    <div class="panel-body">
+
+                        <div id="loggedout"></div>
+                        <!--Sign up input fields-->
+                        <div class="form-group">
+                            <label for="first_name">First Name</label>
+                            <input type="text" id="first_name" class="form-control" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="last_name" class="form-control" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" class="form-control" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" class="form-control" maxlength="72" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" id="confirm_password" class="form-control" maxlength="72" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="photo_url">Upload a photo URL for your avatar!</label>
+                            <input type="text" id="photo_url" class="form-control" />
+                        </div>
+
+                    </div>
+                    <div class="panel-footer text-center">
+
+                        <button id="signupButton" type="button" class="btn btn-info">Sign up</button>
+
+                        <!--<a href="users.html" class="btn btn-primary">Signin</a>-->
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/global.js"></script>
+    <script src="js/signup.js"></script>
+</body>
+</html>
