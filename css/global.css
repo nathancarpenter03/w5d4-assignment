@@ -64,14 +64,14 @@ body {
   color: white;
 }
 
-#toadlogo {
+.toadlogo {
   height: 50px;
   width: 50px;
   margin-right: 20px;
   padding-bottom: 5px;
 }
 
-#user-post-toggle {
+.user-post-toggle {
   font-weight: bold;
 }
 
@@ -89,4 +89,10 @@ body {
   height: 50px;
   border-radius: 50%;
   background-color: #5B8266;
+}
+
+.follow {
+  background-color: #5B8266;
+  width: 100px;
+  color: white;
 }

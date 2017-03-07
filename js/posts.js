@@ -80,16 +80,6 @@ function sendMessage() {
 
         })
 
-    function getPosts() {
-    var token = sessionStorage.getItem('token');
-    
-    fetch('https://hidden-plains-75908.herokuapp.com/posts?token=' + token)
-    .then(function(response) {
-        return response.json();
-    })
-    .then(function(response) {
-        console.log(response);
-        renderPostsList(response);
-    })
-}
+ getPosts();
+
 }

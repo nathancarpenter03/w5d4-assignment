@@ -9,7 +9,7 @@ document.querySelector('#signupButton').addEventListener('click', signup);
 document.querySelector('#signinButton').addEventListener('click', signin)
 
 // if (location.href.includes('logout')) {
-//     document.querySelector('#loggedout').innerHTML = '<div class="alert alert-warning text-center">Logged out successfully.</div>';
+//     document.querySelector('.loggedout').innerHTML = '<div class="alert alert-warning text-center">Logged out successfully.</div>';
 // }
 
 function signup() {
